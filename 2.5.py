@@ -3,3 +3,4 @@
 list_5 = [0] * 100
 list_5[0] = list_5[-1] = 1
 print(list_5)
+print(len(list_5))

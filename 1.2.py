@@ -6,9 +6,7 @@ c = int(input('Enter second row>>>> '))
 d = int(input('Enter second column>>>> '))
 e = int(a * b % 2 == 0)
 f = int(c * d % 2 == 0)
-if (a or b or c or d < 1) and (a or b or c or d > 8):
-    print('Enter correct value')
-else:
+if a and b and c and d in range(1, 9):
     if e == 0:
         print('the first color is black')
     else:
@@ -21,4 +19,6 @@ else:
         print('Yes')
     else:
         print('No')
+else:
+    print('Enter correct value')
 
