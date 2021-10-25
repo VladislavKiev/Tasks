@@ -145,18 +145,14 @@ print(a)
 # 12. A random real number is given. Determine the maximum digit of this number. Execution example: 56.457 -> 7
 
 v = float(input('Input value >>> '))
-vmax = 0
-while v % 10 != 0:
-    v = v*10
-    # v = int(v)
-    print(v)
-v = int(v)
-c = str(v)
-for i in c:
+str_v = str(v)
+r_str_v = str_v.replace(".", "")
+v_max = 0
+for i in r_str_v:
     i = int(i)
-    if i > vmax:
-        vmax = i
-print('max is', vmax)
+    if i > v_max:
+        v_max = i
+print(v_max)
 
 # 13. The factorial of the number n is the number 𝑛! = 1 ∙ 2 ∙ 3∙… ∙ 𝑛. Create a program that calculates the factorial of a user-entered number. (Cycle!)
 
