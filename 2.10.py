@@ -1,4 +1,6 @@
 # Swap the largest and smallest list items
+
+# почему, когда максимальное число в списке = 20, они не меняются?)
 from random import randint
 
 list_2 = []
